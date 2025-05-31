@@ -4,28 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XRP Dashboard by Bojan</title>
+    <title>XRP + BTC Dashboard by Bojan</title>
     <style>
         body {
             background-color: #111;
             color: #f0f0f0;
             font-family: Arial, sans-serif;
+            margin: 0;
             padding: 20px;
         }
-        h1, h2 {
+        h1 {
             color: #00ffff;
+            text-align: center;
+            margin-bottom: 50px;
         }
         section {
-            margin-bottom: 40px;
-        }
-        .footprint {
-            font-family: monospace;
-            background-color: #222;
-            padding: 10px;
-            border-left: 3px solid #00ffff;
-            white-space: pre-wrap;
+            margin-bottom: 60px;
         }
         iframe {
+            width: 100%;
+            height: 600px;
             border: 1px solid #333;
             border-radius: 8px;
         }
@@ -38,40 +36,14 @@
     </style>
 </head>
 <body>
-    <h1>XRP Futures Dashboard</h1>
-    <p>En översikt av relevanta indikatorer för XRP: funding rate, open interest, likvidationer, footprint och live-graf.</p>
+    <h1>XRP & BTC Live Charts</h1>
 
     <section>
-        <h2>📊 Funding Rate</h2>
-        <p>Plats för att manuellt eller automatiskt fylla i funding data från Coinglass eller annan källa.</p>
+        <iframe src="https://legend.coinglass.com/chart/2a755c4e45944f08b52ad1da05209cd1" frameborder="0"></iframe>
     </section>
 
     <section>
-        <h2>💼 Open Interest</h2>
-        <p>Aktuell Open Interest-data, till exempel från Binance Futures eller andra plattformar.</p>
-    </section>
-
-    <section>
-        <h2>💥 Likvidationer</h2>
-        <p>Visa senaste likvidationer per prisnivå eller tidsintervall.</p>
-    </section>
-
-    <section>
-        <h2>🧠 Footprint</h2>
-        <div class="footprint">
-Prisnivå | Köpvolym | Säljvolym
---------|----------|----------
-2.098   | 123k     | 32k
-2.097   | 88k      | 40k
-2.096   | 60k      | 67k
-2.095   | 30k      | 92k
-        </div>
-    </section>
-
-    <section>
-        <h2>📉 Live Coinglass Chart</h2>
-        <p>Direktvy från Coinglass Legend – XRP/USDT 1m med footprint.</p>
-        <iframe src="https://legend.coinglass.com/chart/2a755c4e45944f08b52ad1da05209cd1" width="100%" height="600" frameborder="0"></iframe>
+        <iframe src="https://www.coinglass.com/tv/Binance_BTCUSDT" frameborder="0"></iframe>
     </section>
 
     <footer>

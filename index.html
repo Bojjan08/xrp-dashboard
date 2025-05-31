@@ -25,6 +25,10 @@
             border-left: 3px solid #00ffff;
             white-space: pre-wrap;
         }
+        iframe {
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
         footer {
             margin-top: 60px;
             font-size: 0.9em;
@@ -35,7 +39,7 @@
 </head>
 <body>
     <h1>XRP Futures Dashboard</h1>
-    <p>En översikt av relevanta indikatorer för XRP: funding rate, open interest, likvidationer och footprint.</p>
+    <p>En översikt av relevanta indikatorer för XRP: funding rate, open interest, likvidationer, footprint och live-graf.</p>
 
     <section>
         <h2>📊 Funding Rate</h2>
@@ -62,6 +66,12 @@ Prisnivå | Köpvolym | Säljvolym
 2.096   | 60k      | 67k
 2.095   | 30k      | 92k
         </div>
+    </section>
+
+    <section>
+        <h2>📉 Live Coinglass Chart</h2>
+        <p>Direktvy från Coinglass Legend – XRP/USDT 1m med footprint.</p>
+        <iframe src="https://legend.coinglass.com/chart/2a755c4e45944f08b52ad1da05209cd1" width="100%" height="600" frameborder="0"></iframe>
     </section>
 
     <footer>
